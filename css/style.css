@@ -1,0 +1,166 @@
+* {
+    -o-transition: 0.35s all linear;
+    -moz-transition: 0.35s all linear;
+    -webkit-transition: 0.35s all linear;
+    transition: 0.35s all linear;
+}
+main{
+    width: 50%;
+    margin: 0 auto;
+    display: block;
+}
+#calculator-wrapper {
+    position: absolute; /*bottom:-234px*/;
+    -o-transition: 0.35s all linear;
+    -moz-transition: 0.35s all linear;
+    -webkit-transition: 0.35s all linear;
+    transition: 0.35s all linear;
+    max-width: 600px;
+    width: 100%;
+}
+
+#calculator-wrapper.open {
+    bottom: 10px;
+}
+
+#calculator-pull {
+    position: absolute;
+    bottom: 10px;
+    padding: 20px;
+    background: #ccc;
+    cursor: pointer;
+}
+
+#calculator-pull.open {
+    bottom: 254px;
+}
+
+a {
+    text-decoration: none;
+    font-size: 24px;
+    border-radius: 51px;
+    padding: 10px;
+    width: 60px;
+    display: inline-block;
+    text-align: center;
+    margin: 10px 10px 0;
+    border: 2px solid #202a43;
+    font-weight: bold;
+}
+
+.row {
+    width: 100%;
+}
+
+.row:after {
+    content: "";
+    display: block;
+}
+
+.screen {
+    background: #b4c2b5;
+    width: 100%;
+    height: 200px;
+    overflow: hidden;
+}
+
+#calculator-wrapper {
+    background: #648398;
+}
+
+#second-function {
+    background: #9ccf82;
+    color: #25212f;
+}
+
+.function-button, .function-btn {
+    background: #68879c;
+    color: #fffdfe;
+}
+
+.number-button {
+    background: #f4f4f6;
+    color: #232228;
+    cursor: pointer;
+}
+
+.equation-symbol {
+    background: #515e67;
+    color: #fffcf9;
+}
+
+.inactive {
+    background: #2d373e;
+    color: #636363;
+    cursor: not-allowed;
+}
+
+#row-select {
+    background: #4c565f;
+    color: #58626b;
+    text-align: center;
+    padding: 0 5px;
+    border-radius: 469px;
+    margin-left: 5%;
+    position: relative;
+    top: 10px;
+}
+
+#row-select a {
+    border-color: transparent;
+    color: #58626b;
+    padding: 0;
+    margin-top: 5px;
+}
+
+#arrow-down {
+    margin-bottom: 5px;
+}
+
+a#nd {
+    font-size: 20px;
+    padding: 0 10px 1px;
+    position: relative;
+    top: 9px;
+    margin-top: 0;
+}
+
+.row-inner {
+    display: inline-block;
+}
+.question{
+    display: block;
+    width: 80%;
+    float: left;
+    padding: 1% 2%;
+    font-size: 22px;
+    line-height: 26px;
+    box-sizing: border-box;
+    border: 1px solid red
+}
+.answer{
+    display: block;
+    width: 20%;
+    float: right;
+    padding: 1% 2%;
+    font-size: 22px;
+    line-height: 26px;
+    box-sizing: border-box;
+    border: 1px solid blue;
+    text-align: center;
+}
+#arrow{
+    width: 100%;
+    display: block;
+    float: left;
+    text-align: right;
+}
+#arrow span{
+    width: 10%;
+    display: block;
+    float: right;
+    padding: 1% 5%;
+}
+.second{
+    display: none;
+}
